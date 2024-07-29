@@ -28,7 +28,7 @@ a1=textpt1.replace('1','a')
 a2=a1.replace('2','b')
 texto=a2.replace('3','i')
 #//////////////////////////////////////////////////////////////////////////////////////////////////////////
-print('\033[4;33;40m MODELOS OPERACIONAIS\ndepositar numero\ndepositar texto\nextrair numero\nextrair texto\nconta\nespandir')
+print('\033[4;33;40m MODELOS OPERACIONAIS\ndepositar numero\ndepositar texto\nextrair numero\nextrair texto\nconta\nespandir\njogo')
 for k in range(0,11):
     # ponto de pedido///////////////////
     print('\033[4;33;40mciclos({}/10)'.format(k))
