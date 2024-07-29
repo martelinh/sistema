@@ -1,3 +1,6 @@
+#biblioteca///////////////////////////////////////
+import random
+
 #memoria///////////////////////////////////////
 numero = 0
 numeroMat1= float
@@ -8,6 +11,7 @@ textoMat =str
 k=0
 b4 ='zero'
 b5=0
+ppt=0
 #memoria matematica///////////////////////////////////////////////////////////////////////////////////////////////////
 m1=0
 m2=0
@@ -89,15 +93,26 @@ for k in range(0,11):
         elif enter=='4':
             print('{}'.format(m4))
             enter=(input('precione para fechar'))
-
-
-
-
-
-
-
-
-
+    #pedra papel tesoura//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    if enter=='jogo':
+        print('Jogo de pedra papel tesoura')
+        print('[1]pedra\n[2]papel\n[3]tesoura')
+        enter=input('>>>')
+        ppt=(int(random.random()*11))
+        if enter==1 and ppt in range(0,3):
+            print('você ganhou!!')
+        elif enter==2 and ppt in range(4,7):
+            print('você ganhou!!')
+        elif enter==2 and ppt in range(8,10):
+            print('você ganhou!!')
+        else:
+            print('você perdeu!!')
+        if ppt in range(0,3):
+            print('Eu escoli papel')
+        elif ppt in range(4,7):
+            print('Eu escoli tesoura')
+        elif ppt in range(8,10):
+            print('Eu escoli pedra')       
 
 
 
