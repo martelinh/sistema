@@ -1,2 +1,3 @@
 # sistema
- esse sistema armazena numeros e textos faz operação matematica . obs se na primeira vez pedir para repor ciclos digiti 0
+ esse sistema armazena numeros e textos faz operação matematica .
+  Obs: se na primeira vez pedir para repor ciclos digiti 0
