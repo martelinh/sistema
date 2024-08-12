@@ -98,11 +98,11 @@ for k in range(0,11):
         print('[1]pedra\n[2]papel\n[3]tesoura')
         enter=input('>>>')
         ppt=(int(random.random()*11))
-        if enter==1 and ppt in range(0,3):
+        if enter==1 and ppt in range(-1,4):
             print('você ganhou!!')
-        elif enter==2 and ppt in range(4,7):
+        elif enter==2 and ppt in range(3,8):
             print('você ganhou!!')
-        elif enter==2 and ppt in range(8,10):
+        elif enter==2 and ppt in range(7,11):
             print('você ganhou!!')
         else:
             print('você perdeu!!')
