@@ -1,6 +1,6 @@
 #biblioteca///////////////////////////////////////
 import random
-
+import time
 #memoria///////////////////////////////////////
 numero = 0
 numeroMat1= float
@@ -27,7 +27,7 @@ a1=textpt1.replace('1','a')
 a2=a1.replace('2','b')
 texto=a2.replace('3','i')
 #//////////////////////////////////////////////////////////////////////////////////////////////////////////
-print('\033[4;33;40m MODELOS OPERACIONAIS\ndepositar numero\ndepositar texto\nextrair numero\nextrair texto\nconta\nespandir\njogo')
+print('\033[4;33;40m MODELOS OPERACIONAIS\ndepositar numero\ndepositar texto\nextrair numero\nextrair texto\nconta\nespandir\njogo\nescada')
 for k in range(0,11):
     # ponto de pedido///////////////////
     print('\033[4;33;40mciclos({}/10)'.format(k))
@@ -112,12 +112,15 @@ for k in range(0,11):
             print('Eu escoli tesoura')
         elif ppt in range(8,10):
             print('Eu escoli pedra')       
-
-
-
+#escada////////////////////////////////////////////////
+    if enter=='escada':
+        kk=int(input('tamanho? >'))
+        for kk in range(0,kk):
+            print('#'*kk)
+            time.sleep(kk)
 
         k+1
-#valvamento esterno de memoria/////////////////////////
+#salvamento esterno de memoria/////////////////////////
 b2=texto.replace('a','1')
 b3 =b2.replace('b','2')
 b4=b3.replace('i','3')
