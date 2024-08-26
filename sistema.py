@@ -12,6 +12,7 @@ k=0
 b4 ='zero'
 b5=0
 ppt=0
+veb=0
 #memoria matematica///////////////////////////////////////////////////////////////////////////////////////////////////
 m1=0
 m2=0
@@ -27,11 +28,12 @@ a1=textpt1.replace('1','a')
 a2=a1.replace('2','b')
 texto=a2.replace('3','i')
 #//////////////////////////////////////////////////////////////////////////////////////////////////////////
-print('\033[4;33;40m MODELOS OPERACIONAIS\ndepositar numero\ndepositar texto\nextrair numero\nextrair texto\nconta\nespandir\njogo\nescada')
-for k in range(0,11):
+print('\033[4;33;40m MODELOS OPERACIONAIS\ndepositar numero     depositar texto\nextrair numero     extrair texto\nconta        espandir\njogo      piramide\nsalva     fecha')
+while veb !=1:
     # ponto de pedido///////////////////
-    print('\033[4;33;40mciclos({}/10)'.format(k))
-    print('\033[4;32;40m====='*20)
+    print('\033[4;32;40m     '*20)
+    print('\033[4;33;40m====='*20)
+    print('\033[4;32;40m     '*20)
     enter = str(input('> '))
     #parte de entradas////////////////////////
     #caide de numeros entrada/////////////////////////
@@ -113,19 +115,22 @@ for k in range(0,11):
         elif ppt in range(8,10):
             print('Eu escoli pedra')       
 #escada////////////////////////////////////////////////
-    if enter=='escada':
+    if enter=='piramide':
         kk=int(input('tamanho? >'))
+        k2=int(input('tamanho coloque igual ao primero valor >'))
         for kk in range(0,kk):
-            print('#'*kk)
+            print(' '*k2 , '#'*kk,'#'*kk)
             time.sleep(kk)
-
-        k+1
+            k2=k2-1
+#fechar////////////////////////////////////////////////////
+    if enter =='fecha':
+        veb=1       
 #salvamento esterno de memoria/////////////////////////
-b2=texto.replace('a','1')
-b3 =b2.replace('b','2')
-b4=b3.replace('i','3')
-print('arquivo de texto {}'.format(b4))
-b5=numero*2987
-print('arquivo de matematico {}'.format(b5))
-
-enter=(input('precione para fechar'))
+    if enter =='salva':
+        b2=texto.replace('a','1')
+        b3 =b2.replace('b','2')
+        b4=b3.replace('i','3')
+        print('arquivo de texto {}'.format(b4))
+        b5=numero*2987
+        print('arquivo de matematico {}'.format(b5))
+        enter=(input('precione para fechar'))
